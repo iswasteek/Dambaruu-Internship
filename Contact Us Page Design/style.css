@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 228, 236);
+}
+
+.header-container {
+    height: 20vh;
+    width: 100vw;
+}
+
+.image-container {
+    height: 80%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Contact\ Banner.png");
+    background-size: cover;
+   background-position: center;
+    
+}
+.navbar {
+    display: flex;
+    height: 20%;
+    justify-content:space-between;
+
+}
+.navbar1 {
+    padding: 3px 3px 3px 200px;
+    background-color: rgb(193, 46, 161);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: white;
+    position: relative;
+    bottom: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar2 {
+    padding: 3px 200px 3px 5px ;
+    background-color: rgb(128, 205, 128);
+    color: white;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    position: relative;
+    bottom: 70%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+}
+
+.main-container {
+    display: flex;
+}
+
+.form-container {
+    width: 70vw;
+}
+
+.form-container h2 {
+    width: 90%;
+    color: rgb(120, 16, 218);
+    padding: 0 0 0 135px;
+    margin: 25px auto;
+    font-family: "Rubik",sans-serif;
+}
+
+.input-name {
+    width: 90%;
+    margin: 25px auto;
+    padding: 0 0 0 135px;
+    display: flex;
+}
+
+.text-name {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #cccccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+.text-name:hover {
+    background-color: #f0f0f0;
+}
+
+.text-name:focus {
+    border: 1px solid rgb(4, 0, 255);
+}
+
+#email {
+    margin-left: 10px;
+}
+
+#subject {
+    margin-left: 10px;
+}
+
+#message {
+    height: 35vmin;
+    color: rgb(108, 105, 105);
+}
+
+.button {
+    background-color: rgb(247, 210, 4);
+    border: 1px solid rgb(197, 140, 35);
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    padding: 10px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #d4af37;
+}
+
+.final-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container h2 {
+    color: #7810da;
+    margin: 25px auto;
+    font-family: "Rubik",sans-serif;
+}
+
+.address-head {
+    display: flex;
+    align-items: center;
+}
+
+.fa-location-dot {
+    margin-right: 10px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.footer-share {
+    display: flex;
+    align-items: center;
+    margin-top: 30px; 
+    margin-bottom: 5px;
+}
+

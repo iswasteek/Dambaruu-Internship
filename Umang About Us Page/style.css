@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.main1 {
+    height: 40vh;
+}
+
+.aboutUs-heading{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.heading1 {
+    position: absolute;
+    bottom: 81%;
+}
+
+.heading1 h1 {
+    font-family: "Abhaya Libre", serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.firstUl a {
+    color: white;
+}
+
+.firstUl {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+.header2 {
+    position: absolute;
+    right: 44%;
+}
+
+.fakeCloud {
+    height: 30%;
+    background-size: cover;
+    position: relative;
+    bottom: 30%;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    background-repeat: repeat-x;
+}
+
+@keyframes scroll {
+100% {
+    background-position: 3000px 0;
+}
+}
+
+.realCloud {
+    height: 30%;
+    background-size: cover;
+    position: relative;
+    bottom: 60%;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    animation-direction: reverse;
+    background-repeat: repeat-x;
+}
+
+.main2 {
+    height: 850px;
+    display: flex;
+}
+
+.main2-1st {
+    width: 50%;
+}
+
+.ch-jk h2 {
+    font-family: 'Abhaya Libre', serif;
+    color: #3d56f0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.ch-paragraph p {
+    color: #0f192d;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.ch-content{
+    padding-left: 23%;
+    padding-top: 11%;
+}
+
+.ch-box {
+        background-color:#fff04c;
+        padding:25px 25px;
+        border-radius:30px;
+        box-shadow: 4px 4px 0 0 #FFDF00;
+        margin-left: 21%;
+        margin-top: 6%;
+    }
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.ch-box .accordion-item , .ch-box .accordion-header {
+    background-color: transparent;
+    border: 0;
+	padding: 0;
+}
+
+.ch-box .accordion-header .accordion-button {
+    display: block;
+    color: #2f2b00;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 18px 0px 18px 50px;
+    position: relative;
+    background: transparent;
+    line-height: 1.4;
+    box-shadow: none;
+}
+
+.ch-box .accordion-item:last-child .accordion-header .accordion-button{
+	border-bottom: 0;
+}
+
+.ch-box .accordion-header .accordion-button:after{
+	content: "\f056";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 30px;
+    color: #000;
+    top: 8px;
+	width:auto;
+	height:auto;
+	text-shadow: 4px 1px 0 #fff;
+    left: 10px;
+	background-image:none;
+}
+
+.ch-box .accordion-header .accordion-button.collapsed:after{
+	content: "\f055";
+}
+
+.ch-box .accordion-body{
+	color: #000;
+    font-size: 16px;
+    padding: 20px 0px;
+    line-height: 30px;
+    border-bottom: 2px solid rgba(255,255,255,0.9);
+}    
+
+.main2-2nd {
+    width: 38%;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.split-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.split-box > div {
+    opacity: 0;
+  }
+
+  .split-box:before,
+.split-box:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.split-box:before {
+    background-color: #3d56f0;
+    z-index: 1;
+    transform: translateX(-101%);
+}
+
+.split-box:after {
+    background-color: #fff04c;
+    z-index: 2;
+    transform: translateX(-101%);
+  }
+
+@-webkit-keyframes split-box-animation {
+    0% {
+      transform: translateX(-101%);
+    }
+    50% {
+        transform: translateX(0);
+      }
+    
+      100% {
+        transform: translateX(101%);
+      }
+}
+
+@keyframes split-box-animation {
+    0% {
+      transform: translateX(-101%);
+    }
+  
+    50% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(101%);
+    }
+  }
+
+  .split-box.split-active > div {
+    opacity: 1;
+  }
+  
+  .split-box.split-active:after {
+    animation: split-box-animation 1.2s 0.2s cubic-bezier(1, 0, 0.54, 0.99) forwards;
+  }
+  
+  .split-box.split-active:before {
+    animation: split-box-animation 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  }
+
+.about-media img {
+    mask-image: url(about-bg.png);
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    width: 100%;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    padding: 200px 0 150px 0;
+    
+}
+
+.about-content:before,
+.about-content:after{
+	content:"";
+	height:80px;
+	position:absolute;
+	left:0;
+	width:100%;
+	z-index:2;
+	background-repeat:no-repeat;
+	background-size: 100%;
+}
+.about-content:before{
+	background-image:url(line-bg2.png);
+	bottom:-1px;
+	background-position:bottom;
+}
+.about-content:after{
+	background-image:url(line-bg1.png);
+	top:0;
+}
+
+.main3 {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    border-radius: 30px;
+    padding: 20px 50px;
+    background-color: #ef5cb1;
+    border: 0;
+    position: relative;
+    left: 37%;
+    margin-top: 3%;
+}
+
+.video-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#circle {
+    background-color: #fff000;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 40%;
+}
+
+.fa-play {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.video-container a {
+    text-decoration: none;
+}
+
+.main4 {
+    height: 850px;
+    position: relative;
+    padding: 70px 0 40px 0;
+    
+}
+
+.section-head {
+    margin-bottom: 40px;
+}
+
+.section-head h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 5px;
+    font-family: 'Abhaya Libre', serif;
+    color: #3d56f0;
+    font-weight: 700;
+}
+
+.text-center.section-head p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #0f192d;
+    margin-bottom: 24px;
+}
+
+.main5 {
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container h4 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 30%;
+
+    }
+
+    .text-yellow a {
+   color: #2b2d2e;
+    }
+
+    .text-yellow :hover {
+        color: #ef5cb1;
+         }
+     
+.main6 {
+    height: 730px;
+    position: relative;
+    padding: 70px 0 40px 0;
+}
+
+.client-review {
+    height: 400px;
+    width: 1000px;
+    position: absolute;
+    left: 17%;
+}
+

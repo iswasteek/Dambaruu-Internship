@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2.5vmin;
+    background: #f2f2f2;
+}
+
+.container {
+    background: white ;
+    width: 70vmin;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid rgb(247, 210, 4);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+    line-height: 24px;
+    padding: 25px;
+    text-align: center;
+}
+
+.input-name {
+    width: 90%;
+    position: relative;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    padding:  8px 10px 8px 10px;
+    border: 1px solid #cccccc;
+    border-right: none;
+}
+
+.text-name {
+    width: 100%;
+    padding: 8px 0 8px 10px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+.text-name:hover {
+    background-color: #fafafa;
+}
+
+.text-name:focus {
+    border: 1px solid rgb(4, 0, 255);
+}
+
+#firstName {
+    margin-right: 8px;
+}
+
+.radio-button {
+    margin-right: 5px;
+}
+
+#country {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    color: #747171;
+}
+
+#country:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-color: black;
+}
+
+.check-button {
+    margin: 0px 5px 10px 20px;
+}
+
+.button {
+    background-color: rgb(247, 210, 4);
+    border: none;
+    text-align: center;
+    width: 60%;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d4af37;
+}
+
+.final-submit {
+    display: flex;
+    justify-content: center;
+}
+
+
