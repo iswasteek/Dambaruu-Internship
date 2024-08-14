@@ -22,15 +22,6 @@ Bootstrap: Utilized Bootstrap to ensure responsive design and streamline the dev
 <br>
 
 <pre>
-Here's a template for a README.md file for your GitHub repository related to your Dambaruu internship:
-
-Dambaruu Educational Platform - Front-End Development
-Overview
-Welcome to the repository for the front-end development work completed during my internship at Dambaruu, a child nurturing platform dedicated to providing education through video animations and modern technologies. This repository contains the code for several key web pages designed to enhance the user experience on the platform.
-
-Features
-Responsive Design: Implemented responsive layouts using media queries to ensure an optimal viewing experience across various devices.
-Animations: Integrated smooth animations to make the platform more engaging and interactive.
 Web Pages Developed:
 About Us Page: Provides information about Dambaruu's mission and team.
 Contact Us Page: A form-based page for users to reach out to Dambaruu.
@@ -44,14 +35,12 @@ Getting Started
 To view or modify the code in this repository:
 
 Clone the repository:
-bash
-Copy code
 git clone https://github.com/yourusername/dambaruu-frontend.git
 Navigate to the project directory:
-bash
-Copy code
 cd dambaruu-frontend
 Open the files in your preferred code editor.
+
+
 Usage
 Feel free to explore the code, make modifications, and learn from the implementation of modern front-end techniques. If you have any suggestions or improvements, feel free to submit a pull request.
 
