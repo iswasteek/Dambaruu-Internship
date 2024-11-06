@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h2>Responsive Registration Form</h2>
+        <h2> Register Form</h2>
         <div class="form-container">
-            <form id="userForm" action="/myaction.php" onsubmit="return validateForm()" >
+            <form id="userForm" action="/myaction.php" onsubmit="return validateForm()">
                 <div class="input-name">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email" class="text-name" id="email" >
+                    <input type="email" placeholder="Email" class="text-name" id="email">
                 </div>
                 <div class="input-name">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password" class="text-name" id="password" >
+                    <input type="password" placeholder="Password" class="text-name" id="password">
                 </div>
                 <div class="input-name">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Re-type Password" class="text-name" id="retypePassword" >
+                    <input type="password" placeholder="Re-type Password" class="text-name" id="retypePassword">
                 </div>
                 <div class="input-name" id="name-container">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="First Name" class="name text-name" id="firstName" >
+                    <input type="text" placeholder="First Name" class="name text-name" id="firstName">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Last Name" class="name text-name" id="lastName" >
-                   </div>
-                   <div class="input-name">
+                    <input type="text" placeholder="Last Name" class="name text-name" id="lastName">
+                </div>
+                <div class="input-name">
                     <input type="radio" class="radio-button" name="gender" id="male" value="male">
                     <label for="male" style="margin-right: 30px;">Male</label>
                     <input type="radio" class="radio-button" name="gender" id="female" value="female">
                     <label for="female">Female</label>
                 </div>
-                <div class="input-name country-selector" >
+                <div class="input-name country-selector">
                     <select id="country">
                         <option value="">Select a Country</option>
                         <option value="India">India</option>
@@ -46,16 +50,16 @@
                         <option value="UK">UK</option>
                     </select>
                 </div>
-                    <input type="checkbox" id="agreeTerms" class="check-button">
-                    <label for="agreeTerms">I agree with terms and conditions</label>
-                    <br>
-                    <input type="checkbox" id="subscribeNewsletter" class="check-button">
-                    <label for="subscribeNewsletter">I want to receive the newsletter</label>
+                <input type="checkbox" id="agreeTerms" class="check-button">
+                <label for="agreeTerms">I agree with terms and conditions</label>
+                <br>
+                <input type="checkbox" id="subscribeNewsletter" class="check-button">
+                <label for="subscribeNewsletter">I want to receive the newsletter</label>
                 <div class="input-name final-submit">
                     <input type="submit" class="button" value="Register">
                 </div>
             </form>
         </div>
-    <script src="index.js"></script>
 </body>
+
 </html>
